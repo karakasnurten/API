@@ -1,7 +1,10 @@
 package test;
 
+import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.junit.Test;
+
+import static io.restassured.RestAssured.given;
 
 public class C03_JsonObjectOlusturma {
 
@@ -54,6 +57,8 @@ public class C03_JsonObjectOlusturma {
         body.put("depositpaid",true);
         body.put("lastname","Brown");
         System.out.println(body);
+
+
     }
 
 }
