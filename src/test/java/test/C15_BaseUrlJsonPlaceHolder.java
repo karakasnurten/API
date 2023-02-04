@@ -61,11 +61,7 @@ public class C15_BaseUrlJsonPlaceHolder extends JsonPlaceHolderBaseUrl {
                 assertThat().
                 statusCode(200).
                 body("title",equalTo("optio dolor molestias sit"));
-
-
-
     }
-
     @Test
     public void delete01(){
         /*

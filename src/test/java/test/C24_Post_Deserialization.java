@@ -108,10 +108,11 @@ public class C24_Post_Deserialization extends HerokuappBaseUrl {
                 ((Map)(respMap.get("booking"))).get("additionalneeds") );
 
         Assert.assertEquals(    ((Map)(((Map)(expData.get("booking"))).get("bookingdates"))).get("checkin")  ,
-                ((Map)(((Map)(respMap.get("booking"))).get("bookingdates"))).get("checkin")         );
+                                ((Map)(((Map)(respMap.get("booking"))).get("bookingdates"))).get("checkin")         );
 
-        Assert.assertEquals(    ((Map)(((Map)(expData.get("booking"))).get("bookingdates"))).get("checkout")  ,
-                ((Map)(((Map)(respMap.get("booking"))).get("bookingdates"))).get("checkout")         );
+        Assert.assertEquals( ((Map)(((Map)(expData.get("booking"))).get("bookingdates"))).get("checkout")  ,
+
+                            ((Map)(((Map)(respMap.get("booking"))).get("bookingdates"))).get("checkout")         );
 
 
     }
